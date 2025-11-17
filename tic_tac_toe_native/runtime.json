@@ -1,0 +1,11 @@
+{
+  "preRun": [
+    "env-001"
+  ],
+  "install": [
+    "/opt/venv/bin/pip install -r /workspace/requirements.txt"
+  ],
+  "start": [
+    "/opt/venv/bin/streamlit run /workspace/app.py --server.port=${PORT:-8501} --server.address=0.0.0.0"
+  ]
+}
